@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>timer_signup</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body onload="countdown()">
+  <div class="navbar">
+    <p>JavaScript-Project</p>
+  </div>
+
+  <main>
+    <div class="container">
+    <!-- left side of screen start -->
+      <div class="left">
+        <div id="timescreen">
+        <span id="time"></span>&nbsp;<span id="meridian"></span>
+      </div>
+        <p id="greet">greeting</p>
+        <div id="image">
+          <img id="img" src="" alt="" />
+        </div>
+      </div>
+      <!-- right side of screen start -->
+      <div class="right">
+        <p id="title">signup form</p>
+        <p id="count">timer</p>
+        <div id="form">
+          <form action="/Volumes/Drive-B/CODING/Hara Hara Shambhu(PagalWorld.com.se).mp3" name="myform" method="post"
+            onsubmit="return validation()">
+            <div class="formdesign" id="name">
+              Name :<input type="text" name="fname" value="" onkeyup="checkform()" class="inputclass"/><b><span class="error"></span></b>
+            </div>
+            <div class="formdesign" id="mobile">
+              Mobile:<input type="text" name="fmob" value="" onkeyup="checkform()" class="inputclass"/><b><span class="error"
+                  id="moberr"></span></b>
+            </div>
+            <div class="formdesign" id="email">
+              Email:<input type="email" name="femail" value="" onkeyup="checkform()" class="inputclass"/><b><span class="error"></span></b>
+            </div>
+            <div class="formdesign" id="password">
+              Password:<input type="password" name="fpass" value="" onkeyup="checkform()" class="inputclass"/><b><span class="error"></span></b>
+            </div>
+            <div class="formdesign" id="cpassword">
+              Confirm Password:<input type="password" name="fcpass" value="" onkeyup="checkform()" class="inputclass"/><b><span class="error"></span></b>
+            </div>
+            <div class="formdesign" id="file">
+              Image:<input type="file" name="ffile" value="" accept="image/*" /><b><span class="error"></span></b>
+            </div>
+            <div class="formdesign" id="address">
+              Temp. Address:<input type="text" name="fadd" value="" onkeyup="checkform()" class="inputclass"/><b><span class="error"></span></b>
+            </div>
+            <div class="formdesign" id="paddress">
+              Parmanent Address:<input type="text" name="fpadd" value="" onkeyup="checkform()" class="inputclass"/>
+            </div>
+            <div class="checkboxdiv" id="option">
+              Same as Temp. Add:<input type="radio" name="option" onclick="check()" />yes <input type="radio"
+                name="option" onclick="uncheck()" />No
+            </div>
+
+            <div class="checkboxdiv" id="gen">
+              Gender:<input type="radio" name="gender" />Male
+              <input type="radio" name="gender" />Female<b><span class="error"></span></b>
+            </div>
+            <div class="checkboxdiv" id="lang">
+              Languages:<input type="checkbox" name="language" />HTML
+              <input type="checkbox" name="language" />CSS
+              <input type="checkbox" name="language" />Javascript
+              <input type="checkbox" name="language" />c/c++
+              <b><span class="error"></span></b>
+            </div>
+            <input type="submit" value="submit" class="btn" id="submitBtn" disabled="disabled" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
